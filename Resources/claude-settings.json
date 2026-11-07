@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Read",
+      "Write",
+      "Edit",
+      "Glob",
+      "Skill",
+      "Bash"
+    ],
+    "deny": [
+      "WebSearch",
+      "Bash(osascript *)",
+      "Bash(open *)",
+      "Bash(mail *)",
+      "Bash(sendmail *)",
+      "Bash(msmtp *)",
+      "Bash(ssh *)",
+      "Bash(scp *)",
+      "Bash(rsync *)",
+      "Bash(sftp *)",
+      "Bash(gh *)",
+      "Bash(git push *)",
+      "Bash(git remote *)",
+      "Bash(security *)",
+      "Bash(sudo *)",
+      "Bash(launchctl *)",
+      "Bash(crontab *)",
+      "Bash(claude *)",
+      "Bash(defaults write *)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~*)",
+      "Edit(~/.claude/**)",
+      "Write(~/.claude/**)",
+      "Edit(~/.ssh/**)",
+      "Write(~/.ssh/**)"
+    ]
+  }
+}

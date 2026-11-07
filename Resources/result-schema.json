@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "status": {"type": "string", "enum": ["ok", "failed", "needs_attention"]},
+    "kind": {"type": "string", "enum": ["book", "article", "sep", "epub_filed"]},
+    "title": {"type": "string"},
+    "filed_path": {"type": "string", "description": "absolute path of the finished EPUB, empty if none"},
+    "epubcheck": {"type": "string", "description": "e.g. '0 errors, 0 warnings'"},
+    "kindle_previewer": {"type": "string", "description": "e.g. 'Supported, Success, 0 errors', or 'not run'"},
+    "summary": {"type": "string", "description": "two or three plain sentences: what was done, what was dropped, anything unresolved"}
+  },
+  "required": ["status", "kind", "title", "filed_path", "epubcheck", "kindle_previewer", "summary"]
+}
